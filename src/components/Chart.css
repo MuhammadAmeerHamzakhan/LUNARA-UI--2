@@ -1,0 +1,11 @@
+.chart-container {
+    background-color: #000000; /* Dark background for the chart area */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for aesthetic */
+}
+
+.data-background {
+    background-color: #ffffff; /* Light grey background for the data area */
+    padding: 10px;
+    border-radius: 8px;
+}

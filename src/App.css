@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+/* App.css */
+.app {
+  display: flex; /* Flexbox to place sidebar and content next to each other */
+  background-color: #111111;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  flex: 1; /* This allows the content to take the remaining width */
+  padding: 20px; /* Optional: adds some space around the content */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  color: #848484; /* Grey color for text */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* New style for the number 18 */
+.highlighted-number {
+  color: #ffffff; /* White color for the number 18 */
 }

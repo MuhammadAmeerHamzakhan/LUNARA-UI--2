@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Chart from './components/Chart';
+import DataTable from './components/DataTable';
+import './App.css'; // Import any global styles if you have
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <Sidebar />
+      <div className="content"> {/* This div wraps the chart and table */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Projected runway: <span className="highlighted-number">18</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Chart />
+        <DataTable />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
